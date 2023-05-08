@@ -1,0 +1,18 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-list li {
+  width: 48%; /* each item takes up 48% of the container width */
+  margin-bottom: 20px;
+}
+
+/* make the second item in each row visible */
+.product-list li:nth-child(odd) + li {
+  margin-left: 4%; /* add a margin on the left to create space between the items */
+}
